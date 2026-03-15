@@ -1,11 +1,20 @@
 /* =====================================================
    GAPLIZZER – main.js
    Smooth scroll · FAQ accordion · Demo modal · Reveal
+   Benchmark bar animations
    ===================================================== */
 
-const DEMO_EMAIL = "YOUR_EMAIL"; // ← replace with your email address
+const DEMO_EMAIL = "YOUR_EMAIL"; // ← replace with your real email address
 
-/* ── Smooth scrolling ── */
+// Warn in development if DEMO_EMAIL is still a placeholder
+if (DEMO_EMAIL === "YOUR_EMAIL") {
+  console.warn(
+    "GAPLIZZER: DEMO_EMAIL is still set to the placeholder value. " +
+    "Update the DEMO_EMAIL constant in assets/js/main.js before deploying."
+  );
+}
+
+/* ── Smooth scrolling for anchor links ── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     const target = document.querySelector(this.getAttribute("href"));
@@ -13,7 +22,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault();
     target.scrollIntoView({ behavior: "smooth", block: "start" });
     // Close mobile nav if open
-    navLinks.classList.remove("open");
+    if (navLinks) navLinks.classList.remove("open");
+    if (hamburger) hamburger.setAttribute("aria-expanded", "false");
   });
 });
 
@@ -24,24 +34,26 @@ const navLinks  = document.getElementById("nav-links");
 if (hamburger && navLinks) {
   hamburger.addEventListener("click", () => {
     const open = navLinks.classList.toggle("open");
-    hamburger.setAttribute("aria-expanded", open);
+    hamburger.setAttribute("aria-expanded", String(open));
   });
 }
 
 /* ── Demo modal ── */
-const modal       = document.getElementById("demo-modal");
-const modalClose  = document.getElementById("modal-close");
-const openBtns    = document.querySelectorAll(".open-demo-modal");
-const demoForm    = document.getElementById("demo-form");
+const modal      = document.getElementById("demo-modal");
+const modalClose = document.getElementById("modal-close");
+const openBtns   = document.querySelectorAll(".open-demo-modal");
+const demoForm   = document.getElementById("demo-form");
 
 function openModal() {
+  if (!modal) return;
   modal.classList.add("open");
   modal.removeAttribute("aria-hidden");
   document.body.style.overflow = "hidden";
-  modalClose.focus();
+  if (modalClose) modalClose.focus();
 }
 
 function closeModal() {
+  if (!modal) return;
   modal.classList.remove("open");
   modal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
@@ -50,34 +62,31 @@ function closeModal() {
 openBtns.forEach(btn => btn.addEventListener("click", openModal));
 if (modalClose) modalClose.addEventListener("click", closeModal);
 
+// Close on backdrop click
 if (modal) {
-  modal.addEventListener("click", e => {
-    if (e.target === modal) closeModal();
-  });
+  modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
 }
 
+// Close on Escape key
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && modal && modal.classList.contains("open")) closeModal();
 });
 
-// Form → mailto
+// Demo form submission via mailto
 if (demoForm) {
   demoForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    const name    = demoForm.querySelector('[name="name"]').value.trim();
-    const email   = demoForm.querySelector('[name="email"]').value.trim();
-    const company = demoForm.querySelector('[name="company"]').value.trim();
-    const message = demoForm.querySelector('[name="message"]').value.trim();
+    const name    = (demoForm.querySelector('[name="name"]')?.value    || "").trim();
+    const email   = (demoForm.querySelector('[name="email"]')?.value   || "").trim();
+    const company = (demoForm.querySelector('[name="company"]')?.value || "").trim();
+    const message = (demoForm.querySelector('[name="message"]')?.value || "").trim();
 
-    const subject = encodeURIComponent("GAPLIZZER Demo Request – " + company);
+    const subject = encodeURIComponent(`GAPLIZZER Demo Request — ${company || name}`);
     const body    = encodeURIComponent(
-      "Name: " + name + "\n" +
-      "Email: " + email + "\n" +
-      "Company: " + company + "\n\n" +
-      "Message:\n" + message
+      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\nMessage:\n${message}`
     );
-
-    window.location.href = "mailto:" + DEMO_EMAIL + "?subject=" + subject + "&body=" + body;
+    window.location.href = `mailto:${DEMO_EMAIL}?subject=${subject}&body=${body}`;
+    closeModal();
   });
 }
 
@@ -86,52 +95,52 @@ document.querySelectorAll(".faq-question").forEach(btn => {
   btn.addEventListener("click", function () {
     const item   = this.closest(".faq-item");
     const answer = item.querySelector(".faq-answer");
+    const inner  = item.querySelector(".faq-answer-inner");
     const isOpen = item.classList.contains("open");
 
     // Close all
     document.querySelectorAll(".faq-item.open").forEach(openItem => {
+      const a = openItem.querySelector(".faq-answer");
       openItem.classList.remove("open");
-      openItem.querySelector(".faq-answer").style.maxHeight = "0";
       openItem.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+      a.style.maxHeight = "0";
     });
 
-    // Toggle clicked
+    // Open clicked if it was closed
     if (!isOpen) {
       item.classList.add("open");
-      answer.style.maxHeight = answer.scrollHeight + "px";
-      this.setAttribute("aria-expanded", "true");
+      btn.setAttribute("aria-expanded", "true");
+      answer.style.maxHeight = inner.scrollHeight + "px";
     }
   });
 });
 
 /* ── Scroll reveal ── */
-const revealObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
 
 document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
-/* ── Benchmark bar animation ── */
-const bmObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.querySelectorAll(".bm-bar-fill[data-width]").forEach(bar => {
-          bar.style.width = bar.dataset.width;
-        });
-        bmObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.3 }
-);
+/* ── Benchmark bar animations ── */
+const barObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll(".bmark-bar-fill[data-width]").forEach(bar => {
+        bar.style.width = bar.dataset.width;
+      });
+      barObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
 
-document.querySelectorAll(".bm-bars").forEach(el => bmObserver.observe(el));
+document.querySelectorAll(".benchmark-visual").forEach(el => barObserver.observe(el));
+
+/* ── Footer year ── */
+const yearEl = document.getElementById("footer-year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();

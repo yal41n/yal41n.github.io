@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="GAPLIZZER — AI-powered ISO 27001 compliance automation platform. Identify, prioritize, and close compliance gaps collaboratively, continuously, and with full confidentiality control." />
-  <meta property="og:title" content="GAPLIZZER — ISO 27001 Compliance Simplified" />
-  <meta property="og:description" content="Automate your compliance journey. Maps to ISO 27001, NIST CSF, SOC 2." />
-  <meta property="og:type" content="website" />
-  <title>GAPLIZZER — ISO 27001 Compliance Automation</title>
+  <meta name="description" content="GAPLIZZER — AI-powered cybersecurity GAP analysis platform. Identify, prioritize, and close security gaps collaboratively, continuously, and with full confidentiality control." />
+  <meta property="og:title"       content="GAPLIZZER — AI-Powered Cybersecurity GAP Analysis" />
+  <meta property="og:description" content="Multi-agent AI, virtual CISO, on-prem deployment. Maps to ISO 27001, NIST CSF, SOC 2." />
+  <meta property="og:type"        content="website" />
+  <title>GAPLIZZER — AI-Powered Cybersecurity GAP Analysis</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
@@ -20,18 +20,19 @@
   <nav class="navbar" aria-label="Main navigation">
     <div class="container">
       <a class="nav-logo" href="#hero" aria-label="GAPLIZZER home">
-        <img src="assets/logo.svg" alt="GAPLIZZER" width="160" height="36" />
+        <img src="assets/logo.svg" alt="GAPLIZZER" width="180" height="34" />
       </a>
 
       <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="#problem">Why it matters</a></li>
-        <li><a href="#wizard">Implementation</a></li>
+        <li><a href="#problem">Why It Matters</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#frameworks">Frameworks</a></li>
+        <li><a href="#confidentiality">On-Prem</a></li>
+        <li><a href="#benchmark">Benchmark</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
 
-      <a href="#" class="btn btn-primary nav-cta open-demo-modal" aria-haspopup="dialog">Request Demo</a>
+      <button class="btn btn-primary nav-cta open-demo-modal" aria-haspopup="dialog">Request Demo</button>
 
       <button class="hamburger" id="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -48,22 +49,32 @@
 <section id="hero" aria-labelledby="hero-heading">
   <div class="container">
     <div class="hero-content">
-      <span class="label-tag">Compliance Automation Platform</span>
+      <span class="label-tag">AI-Powered Cybersecurity GAP Analysis</span>
       <h1 class="hero-headline" id="hero-heading">
-        ISO 27001 Compliance<br><span class="highlight">Simplified</span>
+        Close Security Gaps.<br>
+        <span class="line2">Before They're Exploited.</span>
       </h1>
       <p class="hero-sub">
-        GAPLIZZER is an AI-powered compliance automation platform that guides your organization
-        through every stage of ISO 27001 certification — identifying gaps, generating documents,
-        and tracking remediation in one unified workspace.
+        GAPLIZZER is an AI-powered cybersecurity GAP analysis platform that helps
+        organizations identify, prioritize, and close security gaps — collaboratively,
+        continuously, and with full confidentiality control.
       </p>
       <div class="hero-ctas">
         <button class="btn btn-primary open-demo-modal" aria-haspopup="dialog">
-          <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l4.553-2.276A1 1 0 0121 8.764V15.236a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg>
+          <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 10l4.553-2.276A1 1 0 0121 8.764V15.236a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+          </svg>
           Request Demo
         </button>
         <a href="assets/sample-report.pdf" class="btn btn-outline" target="_blank" rel="noopener">
-          <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
           View Sample Report
         </a>
       </div>
@@ -72,586 +83,804 @@
         <span class="badge">NIST CSF</span>
         <span class="badge">SOC 2</span>
         <span class="badge">On-Prem Ready</span>
-        <span class="badge">AI-Powered</span>
+        <span class="badge">Virtual CISO</span>
+        <span class="badge">Multi-Agent AI</span>
       </div>
     </div>
 
-    <!-- Dashboard widget -->
-    <div class="hero-visual" aria-label="GAPLIZZER dashboard preview" aria-hidden="true">
+    <!-- Live GAP Analysis board widget -->
+    <div class="hero-visual" role="img" aria-label="GAPLIZZER live GAP analysis board preview">
       <div class="dash-topbar">
         <div class="dash-topbar-title">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          GAPLIZZER Dashboard
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+          Live GAP Analysis Board
         </div>
         <span class="dash-live">Live</span>
       </div>
       <div class="dash-body">
-        <div class="dash-metrics">
-          <!-- Ring 1: Active Tasks -->
-          <div class="dash-metric">
-            <div class="dash-metric-ring">
-              <svg width="60" height="60" viewBox="0 0 60 60">
-                <circle class="ring-bg" cx="30" cy="30" r="24"/>
-                <circle class="ring-fill" cx="30" cy="30" r="24" stroke-dasharray="150.8" stroke-dashoffset="38" data-offset="38"/>
-              </svg>
-              <div class="ring-text">12</div>
-            </div>
-            <div class="dash-metric-value">12</div>
-            <div class="dash-metric-label">Active Tasks</div>
+        <!-- Security posture score ring -->
+        <div class="dash-score">
+          <div class="score-ring">
+            <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+              <circle class="ring-bg"   cx="32" cy="32" r="26"/>
+              <circle class="ring-fill" cx="32" cy="32" r="26"
+                      stroke-dasharray="163.4"
+                      stroke-dashoffset="49"/>
+            </svg>
+            <div class="ring-text">70%</div>
           </div>
-          <!-- Ring 2: Documents -->
-          <div class="dash-metric">
-            <div class="dash-metric-ring">
-              <svg width="60" height="60" viewBox="0 0 60 60">
-                <circle class="ring-bg" cx="30" cy="30" r="24"/>
-                <circle class="ring-fill" cx="30" cy="30" r="24" stroke-dasharray="150.8" stroke-dashoffset="30" data-offset="30"/>
-              </svg>
-              <div class="ring-text">8/10</div>
-            </div>
-            <div class="dash-metric-value">8 / 10</div>
-            <div class="dash-metric-label">Docs Completed</div>
-          </div>
-          <!-- Ring 3: Steps -->
-          <div class="dash-metric">
-            <div class="dash-metric-ring">
-              <svg width="60" height="60" viewBox="0 0 60 60">
-                <circle class="ring-bg" cx="30" cy="30" r="24"/>
-                <circle class="ring-fill" cx="30" cy="30" r="24" stroke-dasharray="150.8" stroke-dashoffset="64" data-offset="64"/>
-              </svg>
-              <div class="ring-text">4/7</div>
-            </div>
-            <div class="dash-metric-value">4 / 7</div>
-            <div class="dash-metric-label">Steps Done</div>
+          <div class="score-info">
+            <span class="score-label">Security Posture</span>
+            <span class="score-value">Score: 70 / 100</span>
+            <span style="font-size:.75rem;color:#fb923c;font-weight:600;">▲ +8 pts this month</span>
           </div>
         </div>
-        <div class="dash-bars">
-          <div class="dash-bar-row">
-            <div class="dash-bar-label">
-              <strong>ISO 27001 Compliance</strong>
-              <span>73%</span>
-            </div>
-            <div class="dash-bar-track">
-              <div class="dash-bar-fill" style="width: 73%" data-width="73%"></div>
-            </div>
+
+        <!-- Active gaps -->
+        <div class="dash-gaps">
+          <div class="gap-row">
+            <span class="gap-sev critical"></span>
+            <span class="gap-title">MFA not enforced on admin accounts</span>
+            <span class="gap-tag iso">ISO A.9</span>
           </div>
-          <div class="dash-bar-row">
-            <div class="dash-bar-label">
-              <strong>Risk Assessment</strong>
-              <span>58%</span>
-            </div>
-            <div class="dash-bar-track">
-              <div class="dash-bar-fill" style="width: 58%" data-width="58%"></div>
-            </div>
+          <div class="gap-row">
+            <span class="gap-sev high"></span>
+            <span class="gap-title">Incident response plan outdated</span>
+            <span class="gap-tag nist">NIST RS</span>
           </div>
-          <div class="dash-bar-row">
-            <div class="dash-bar-label">
-              <strong>Control Implementation</strong>
-              <span>81%</span>
-            </div>
-            <div class="dash-bar-track">
-              <div class="dash-bar-fill" style="width: 81%" data-width="81%"></div>
-            </div>
+          <div class="gap-row">
+            <span class="gap-sev medium"></span>
+            <span class="gap-title">Third-party risk review overdue</span>
+            <span class="gap-tag soc">SOC 2</span>
           </div>
         </div>
-      </div>
-      <div class="dash-footer">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-        Last updated: just now &mdash; all data on-premises
+
+        <!-- AI agents status -->
+        <div class="dash-agents">
+          <span class="agent-dot"></span>
+          <span class="agent-label">vCISO agent orchestrating 4 sub-agents</span>
+          <span class="agent-status">● Active</span>
+        </div>
       </div>
     </div>
-
   </div>
 </section>
 
+
 <!-- ╔══════════════════════════════════════════╗
-     ║   PROBLEM                                ║
+     ║   PROBLEM / WHY IT MATTERS               ║
      ╚══════════════════════════════════════════╝ -->
-<section id="problem" aria-labelledby="problem-heading">
+<section id="problem" class="section section-alt" aria-labelledby="problem-heading">
   <div class="container">
     <div class="section-header reveal">
-      <span class="label-tag">Why it matters</span>
-      <h2 id="problem-heading">Compliance gaps don't wait for your next audit</h2>
-      <p>Most organizations struggle with fragmented tools, point-in-time assessments,
-         and compliance reports that generate paperwork instead of driving action.</p>
+      <span class="label-tag purple">Why It Matters</span>
+      <h2 id="problem-heading">Security teams are flying blind</h2>
+      <p>
+        Most organizations discover security gaps only after an incident — or buried inside
+        a static spreadsheet that's outdated before it's finished.
+      </p>
     </div>
     <div class="problem-grid">
       <div class="problem-card reveal">
-        <div class="icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="problem-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+          </svg>
         </div>
-        <h3>Point-in-time assessments</h3>
-        <p>Traditional audits are snapshots. Compliance requirements evolve, but most teams only look once or twice a year.</p>
+        <h3>Manual &amp; error-prone</h3>
+        <p>Gap assessments done in spreadsheets take weeks, go stale immediately, and miss critical
+           control areas due to human oversight.</p>
       </div>
       <div class="problem-card reveal">
-        <div class="icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <div class="problem-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
         </div>
-        <h3>Siloed compliance teams</h3>
-        <p>Legal, IT, and risk teams operate in separate tools with no shared visibility, leading to duplication and missed controls.</p>
+        <h3>No prioritization</h3>
+        <p>Without context-aware risk scoring, teams waste effort on low-impact findings while
+           critical exposure points go unaddressed for months.</p>
       </div>
       <div class="problem-card reveal">
-        <div class="icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9l-7-7z"/><polyline points="13 2 13 9 20 9"/></svg>
+        <div class="problem-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+          </svg>
         </div>
-        <h3>Documents that don't drive action</h3>
-        <p>Dense compliance documentation with no clear remediation path leaves teams unsure where to start.</p>
+        <h3>Siloed teams</h3>
+        <p>Security, IT, and compliance work in disconnected tools. Accountability gaps form,
+           remediation stalls, and audits become last-minute fire drills.</p>
       </div>
       <div class="problem-card reveal">
-        <div class="icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        <div class="problem-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0110 0v4"/>
+          </svg>
         </div>
-        <h3>Sensitive data risks</h3>
-        <p>Sending internal security posture and audit data to cloud-only SaaS tools creates unacceptable confidentiality risks.</p>
+        <h3>Confidentiality risks</h3>
+        <p>Sending sensitive security posture data to cloud-only vendors creates regulatory
+           exposure and contradicts the principle of least privilege.</p>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- ╔══════════════════════════════════════════╗
-     ║   WIZARD / IMPLEMENTATION GUIDE          ║
+     ║   HOW IT WORKS                           ║
      ╚══════════════════════════════════════════╝ -->
-<section id="wizard" aria-labelledby="wizard-heading">
+<section id="how-it-works" class="section" aria-labelledby="hiw-heading">
   <div class="container">
     <div class="section-header reveal">
-      <span class="label-tag">Implementation Guide</span>
-      <h2 id="wizard-heading">Your path to ISO 27001 certification</h2>
-      <p>GAPLIZZER guides your team through every phase with a structured, AI-augmented workflow — from initial setup to audit-ready certification.</p>
+      <span class="label-tag">How It Works</span>
+      <h2 id="hiw-heading">From gaps to remediation in five steps</h2>
+      <p>
+        GAPLIZZER's multi-agent AI orchestrates your entire GAP analysis lifecycle — so your
+        team focuses on decisions, not data collection.
+      </p>
     </div>
-    <div class="wizard-timeline">
-
-      <div class="wizard-step completed reveal">
-        <div class="wizard-step-num" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num" aria-hidden="true">1</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+          </svg>
         </div>
-        <div class="wizard-step-body">
-          <h3>Step 1: Company Settings</h3>
-          <p>Configure your organization profile, industry classification, and applicable compliance scope. GAPLIZZER pre-populates controls relevant to your environment.</p>
-          <span class="wizard-step-status">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Completed
-          </span>
-        </div>
+        <h3>Connect &amp; scope</h3>
+        <p>Connect your environment (APIs, agents, or manual import) and define assessment scope against chosen frameworks.</p>
       </div>
-
-      <div class="wizard-step completed reveal">
-        <div class="wizard-step-num" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      <div class="step reveal">
+        <div class="step-num" aria-hidden="true">2</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
         </div>
-        <div class="wizard-step-body">
-          <h3>Step 2: Risk Assessment</h3>
-          <p>The AI engine automatically identifies and classifies assets, threats, and vulnerabilities. Your team reviews and refines the automated risk register collaboratively.</p>
-          <span class="wizard-step-status">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Completed
-          </span>
-        </div>
+        <h3>AI-driven gap detection</h3>
+        <p>Specialized AI agents scan controls, evidence, and configurations to surface gaps mapped to ISO 27001, NIST CSF, and SOC 2.</p>
       </div>
-
-      <div class="wizard-step active reveal">
-        <div class="wizard-step-num" aria-hidden="true">03</div>
-        <div class="wizard-step-body">
-          <h3>Step 3: Control Implementation</h3>
-          <p>Map remediation tasks to ISO 27001 Annex A controls. Assign owners, set deadlines, and track progress in real time using the live compliance board.</p>
-          <span class="wizard-step-status">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            In Progress
-          </span>
+      <div class="step reveal">
+        <div class="step-num" aria-hidden="true">3</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
         </div>
+        <h3>Prioritize by risk</h3>
+        <p>The virtual CISO scores and ranks gaps by business impact, likelihood, and regulatory weight — so you act on what matters.</p>
       </div>
-
-      <div class="wizard-step reveal">
-        <div class="wizard-step-num" aria-hidden="true">04</div>
-        <div class="wizard-step-body">
-          <h3>Step 4: Document Management</h3>
-          <p>Generate ISO 27001-required documentation from smart templates — policies, procedures, and records auto-populated with your organization's data.</p>
-          <span class="wizard-step-status">Pending</span>
+      <div class="step reveal">
+        <div class="step-num" aria-hidden="true">4</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+          </svg>
         </div>
+        <h3>Collaborate &amp; assign</h3>
+        <p>Shared workspace lets your team assign owners, set deadlines, attach evidence, and track remediation in real time.</p>
       </div>
-
-      <div class="wizard-step reveal">
-        <div class="wizard-step-num" aria-hidden="true">05</div>
-        <div class="wizard-step-body">
-          <h3>Step 5: Internal Audit</h3>
-          <p>Run structured internal audits with guided checklists. Capture findings, assign corrective actions, and build your audit evidence package automatically.</p>
-          <span class="wizard-step-status">Pending</span>
+      <div class="step reveal">
+        <div class="step-num" aria-hidden="true">5</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
         </div>
+        <h3>Close &amp; verify</h3>
+        <p>AI validates closure evidence, updates your posture score, and automatically re-maps gaps for continuous monitoring.</p>
       </div>
-
-      <div class="wizard-step reveal">
-        <div class="wizard-step-num" aria-hidden="true">06</div>
-        <div class="wizard-step-body">
-          <h3>Step 6: Certification Readiness</h3>
-          <p>Review your certification readiness score, address remaining gaps, and export a complete evidence dossier for your external certification body.</p>
-          <span class="wizard-step-status">Pending</span>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
+
 
 <!-- ╔══════════════════════════════════════════╗
      ║   KEY FEATURES                           ║
      ╚══════════════════════════════════════════╝ -->
-<section id="features" aria-labelledby="features-heading">
+<section id="features" class="section section-alt" aria-labelledby="features-heading">
   <div class="container">
     <div class="section-header reveal">
       <span class="label-tag">Key Features</span>
-      <h2 id="features-heading">Everything your compliance team needs</h2>
-      <p>Purpose-built for compliance managers, CISOs, and security teams who need clarity, automation, and continuous oversight.</p>
+      <h2 id="features-heading">Everything your security team needs</h2>
+      <p>Built for CISOs, analysts, and security teams who need depth without complexity.</p>
     </div>
     <div class="features-grid">
 
-      <article class="feature-card reveal">
+      <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
         </div>
-        <h3>Smart Document Templates</h3>
-        <p>AI-generated ISO 27001 policies, procedures, and statements of applicability — auto-populated with your organization's data. Every document is audit-ready from day one.</p>
-        <span class="feature-tag">✓ Generated Output</span>
-      </article>
+        <h3>Live GAP Analysis Board</h3>
+        <p>A shared workspace that updates in real time as AI agents detect new gaps, owners update tasks, and evidence is attached.</p>
+      </div>
 
-      <article class="feature-card reveal">
+      <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+          </svg>
         </div>
-        <h3>Automated Risk Register</h3>
-        <p>Automatically identify, classify, and score risks across your asset inventory. The AI engine maps findings to ISO 27001 controls and suggests remediation priorities.</p>
-        <span class="feature-tag">✓ AI-Powered</span>
-      </article>
+        <h3>Multi-Agent AI System</h3>
+        <p>A hierarchy of specialized AI agents — each covering a control domain — orchestrated by a virtual CISO that synthesizes findings into strategic guidance.</p>
+      </div>
 
-      <article class="feature-card reveal">
+      <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
         </div>
-        <h3>Internal Audit Tools</h3>
-        <p>Guided audit checklists aligned to ISO 27001 clauses. Capture findings, issue corrective action requests, and track resolution — all within the platform.</p>
-        <span class="feature-tag">✓ Audit-Ready</span>
-      </article>
+        <h3>Virtual CISO</h3>
+        <p>An AI-powered virtual CISO that prioritizes gaps by business risk, recommends remediation roadmaps, and answers your team's security questions 24/7.</p>
+      </div>
 
-      <article class="feature-card reveal">
+      <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-        </div>
-        <h3>Virtual CISO Orchestration</h3>
-        <p>A multi-agent AI system orchestrated by a virtual CISO that continuously analyzes your compliance posture and recommends prioritized actions.</p>
-        <span class="feature-tag">✓ Continuous</span>
-      </article>
-
-      <article class="feature-card reveal">
-        <div class="feature-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-        </div>
-        <h3>Live Compliance Board</h3>
-        <p>A shared collaborative workspace where your entire team manages controls, assigns owners, and tracks remediation in real time — across departments.</p>
-        <span class="feature-tag">✓ Collaborative</span>
-      </article>
-
-      <article class="feature-card reveal">
-        <div class="feature-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+          </svg>
         </div>
         <h3>On-Prem Deployment</h3>
-        <p>Deploy fully on your infrastructure — including the AI model. Sensitive compliance data never leaves your environment. Air-gapped deployment supported.</p>
-        <span class="feature-tag">✓ Data Sovereignty</span>
-      </article>
+        <p>Deploy GAPLIZZER — including the AI model — entirely on your own infrastructure. Sensitive security data never leaves your environment.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/>
+            <line x1="12" y1="20" x2="12" y2="4"/>
+            <line x1="6"  y1="20" x2="6"  y2="14"/>
+          </svg>
+        </div>
+        <h3>Benchmark Dashboard</h3>
+        <p>Compare your security posture anonymously against peers in your industry and size bracket — with no raw data ever shared externally.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <h3>Gamification Module</h3>
+        <p>Convert real security gaps into hands-on training missions for interns and junior analysts — building skills while closing actual vulnerabilities.</p>
+      </div>
 
     </div>
   </div>
 </section>
+
 
 <!-- ╔══════════════════════════════════════════╗
      ║   FRAMEWORK COVERAGE                     ║
      ╚══════════════════════════════════════════╝ -->
-<section id="frameworks" aria-labelledby="frameworks-heading">
+<section id="frameworks" class="section" aria-labelledby="frameworks-heading">
   <div class="container">
     <div class="section-header reveal">
       <span class="label-tag">Framework Coverage</span>
-      <h2 id="frameworks-heading">Mapped to the frameworks you already use</h2>
-      <p>GAPLIZZER automatically maps every control and gap to the relevant clauses across major compliance frameworks.</p>
+      <h2 id="frameworks-heading">Maps to the frameworks you live by</h2>
+      <p>GAPLIZZER natively maps every gap to the controls and sub-controls of the world's leading security frameworks.</p>
     </div>
-    <div class="frameworks reveal">
-      <div class="framework-badge">
-        <div class="fw-icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div class="frameworks-grid">
+
+      <div class="fw-card reveal" style="--fw-color:#a855f7;--fw-bg:rgba(168,85,247,.1);--fw-border:rgba(168,85,247,.3);">
+        <div class="fw-badge">ISO 27001 : 2022</div>
+        <h3>ISO/IEC 27001</h3>
+        <p>Complete coverage of Annex A controls across 4 domains. Automated gap-to-control mapping with audit-ready evidence linking.</p>
+        <div class="fw-controls">
+          <span class="fw-control">Annex A</span>
+          <span class="fw-control">93 Controls</span>
+          <span class="fw-control">ISMS</span>
+          <span class="fw-control">Audit Ready</span>
         </div>
-        <span class="fw-name">ISO 27001</span>
-        <span class="fw-desc">Information security management system standard</span>
       </div>
-      <div class="framework-badge">
-        <div class="fw-icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+
+      <div class="fw-card reveal" style="--fw-color:#22d3ee;--fw-bg:rgba(34,211,238,.1);--fw-border:rgba(34,211,238,.3);">
+        <div class="fw-badge">NIST CSF 2.0</div>
+        <h3>NIST Cybersecurity Framework</h3>
+        <p>Full mapping across all six CSF 2.0 functions: Govern, Identify, Protect, Detect, Respond, Recover — with subcategory-level gap scoring.</p>
+        <div class="fw-controls">
+          <span class="fw-control">6 Functions</span>
+          <span class="fw-control">Subcategories</span>
+          <span class="fw-control">CSF 2.0</span>
+          <span class="fw-control">Tiers</span>
         </div>
-        <span class="fw-name">NIST CSF</span>
-        <span class="fw-desc">Cybersecurity Framework — Identify, Protect, Detect, Respond, Recover</span>
       </div>
-      <div class="framework-badge">
-        <div class="fw-icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+
+      <div class="fw-card reveal" style="--fw-color:#fbbf24;--fw-bg:rgba(251,191,36,.08);--fw-border:rgba(251,191,36,.28);">
+        <div class="fw-badge">SOC 2 Type II</div>
+        <h3>SOC 2</h3>
+        <p>Maps gaps to Trust Services Criteria across Security, Availability, Processing Integrity, Confidentiality, and Privacy.</p>
+        <div class="fw-controls">
+          <span class="fw-control">TSC</span>
+          <span class="fw-control">Type I &amp; II</span>
+          <span class="fw-control">5 Categories</span>
+          <span class="fw-control">Evidence</span>
         </div>
-        <span class="fw-name">SOC 2</span>
-        <span class="fw-desc">Service Organization Control — Trust Services Criteria</span>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- ╔══════════════════════════════════════════╗
      ║   CONFIDENTIALITY & ON-PREM              ║
      ╚══════════════════════════════════════════╝ -->
-<section id="confidentiality" aria-labelledby="conf-heading">
+<section id="confidentiality" class="section section-alt" aria-labelledby="confidentiality-heading">
   <div class="container">
-    <div class="confidentiality-block reveal">
-      <div>
-        <div class="lock-icon" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+    <div class="onprem-inner">
+      <div class="onprem-content reveal">
+        <span class="label-tag purple">Full Confidentiality Control</span>
+        <div class="onprem-badge" aria-label="On-prem deployment available">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0110 0v4"/>
+          </svg>
+          Data never leaves your environment
         </div>
-        <span class="label-tag">Data Sovereignty</span>
-        <h2 id="conf-heading">Your sensitive data <span class="highlight">never leaves your environment</span></h2>
-        <p>GAPLIZZER is built for organizations that can't afford data leakage — especially when performing internal compliance assessments and storing audit evidence.</p>
-        <ul class="confidentiality-list">
-          <li>Full on-premises deployment, including the AI model</li>
-          <li>No data transmitted to third-party cloud services</li>
-          <li>Granular confidentiality controls per user and team</li>
-          <li>Air-gapped deployment support for classified environments</li>
-          <li>Complete audit trail for every access and modification</li>
+        <h2 id="confidentiality-heading">Deploy entirely on-prem — including the AI</h2>
+        <p>
+          GAPLIZZER is the only GAP analysis platform that lets you deploy the entire stack —
+          including the large language model powering the virtual CISO — on your own
+          infrastructure, air-gapped if needed.
+        </p>
+        <ul class="onprem-list">
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Full on-premises deployment — no data leaves your network
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Air-gap compatible for classified and highly regulated environments
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Bring your own LLM or use our bundled open-weight model
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Role-based access and end-to-end encryption at rest and in transit
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            SaaS option also available for teams preferring managed deployment
+          </li>
         </ul>
       </div>
-      <div class="confidentiality-visual" aria-hidden="true">
-        <div class="onprem-badge">
-          <div class="ob-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+
+      <div class="onprem-visual reveal">
+        <div class="onprem-arch">
+          <div class="arch-row">
+            <div class="arch-icon purple" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <span class="arch-label">GAPLIZZER Application</span>
+            <span class="arch-secure">On-Prem</span>
           </div>
-          <div class="ob-text">
-            <strong>On-Prem AI Engine</strong>
-            <span>Running on your infrastructure</span>
+          <div class="arch-connector">↕ encrypted</div>
+          <div class="arch-row">
+            <div class="arch-icon purple" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/>
+              </svg>
+            </div>
+            <span class="arch-label">AI / LLM Engine (local)</span>
+            <span class="arch-secure">Isolated</span>
           </div>
-        </div>
-        <div class="onprem-badge">
-          <div class="ob-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          <div class="arch-connector">↕ internal API</div>
+          <div class="arch-row">
+            <div class="arch-icon cyan" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </div>
+            <span class="arch-label">Data / Evidence Store</span>
+            <span class="arch-secure">Encrypted</span>
           </div>
-          <div class="ob-text">
-            <strong>Zero External Calls</strong>
-            <span>Fully air-gappable</span>
-          </div>
-        </div>
-        <div class="onprem-badge">
-          <div class="ob-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <div class="ob-text">
-            <strong>Role-Based Access</strong>
-            <span>Confidentiality per team / user</span>
+          <div class="arch-connector">↕ TLS 1.3</div>
+          <div class="arch-row">
+            <div class="arch-icon green" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <span class="arch-label">Security Team (browser)</span>
+            <span class="arch-secure">RBAC</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- ╔══════════════════════════════════════════╗
      ║   BENCHMARK DASHBOARD                    ║
      ╚══════════════════════════════════════════╝ -->
-<section id="benchmark" aria-labelledby="bench-heading">
+<section id="benchmark" class="section" aria-labelledby="benchmark-heading">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="label-tag">Compliance Benchmark</span>
-      <h2 id="bench-heading">Know where you stand — anonymously</h2>
-      <p>Compare your compliance posture against peers in your industry and size cohort.
-         All data is anonymized and aggregated — you contribute nothing identifiable.</p>
-    </div>
-    <div class="benchmark-card reveal" aria-label="Sample benchmark data visualization">
-      <h3>Compliance Posture Score — Financial Services (Mid-Market) · Sample Data</h3>
-      <div class="bm-bars" role="list">
-        <div class="bm-row" role="listitem">
-          <span class="bm-label">Access Control</span>
-          <div class="bm-bar-track"><div class="bm-bar-fill" data-width="82%" style="width:0%" aria-label="82%"></div></div>
-          <span class="bm-value">82%</span>
+    <div class="benchmark-inner">
+      <div class="benchmark-visual reveal">
+        <div class="bmark-header">
+          <span>Security Posture Benchmark</span>
+          <span class="bmark-tag">Anonymized</span>
         </div>
-        <div class="bm-row" role="listitem">
-          <span class="bm-label">Data Protection</span>
-          <div class="bm-bar-track"><div class="bm-bar-fill" data-width="67%" style="width:0%" aria-label="67%"></div></div>
-          <span class="bm-value">67%</span>
-        </div>
-        <div class="bm-row" role="listitem">
-          <span class="bm-label">Incident Response</span>
-          <div class="bm-bar-track"><div class="bm-bar-fill" data-width="74%" style="width:0%" aria-label="74%"></div></div>
-          <span class="bm-value">74%</span>
-        </div>
-        <div class="bm-row" role="listitem">
-          <span class="bm-label">Risk Management</span>
-          <div class="bm-bar-track"><div class="bm-bar-fill" data-width="55%" style="width:0%" aria-label="55%"></div></div>
-          <span class="bm-value">55%</span>
-        </div>
-        <div class="bm-row" role="listitem">
-          <span class="bm-label">Compliance</span>
-          <div class="bm-bar-track"><div class="bm-bar-fill" data-width="91%" style="width:0%" aria-label="91%"></div></div>
-          <span class="bm-value">91%</span>
+        <div class="bmark-body">
+          <!-- Access Control domain -->
+          <div class="bmark-row">
+            <div class="bmark-labels">
+              <span>Access Control</span>
+              <span>Your score vs. peers</span>
+            </div>
+            <div class="bmark-bars">
+              <div class="bmark-bar-wrap">
+                <span class="bmark-bar-lbl">You</span>
+                <div class="bmark-bar-track">
+                  <div class="bmark-bar-fill you" data-width="78%"></div>
+                </div>
+                <span class="bmark-bar-val">78%</span>
+              </div>
+              <div class="bmark-bar-wrap">
+                <span class="bmark-bar-lbl">Peers</span>
+                <div class="bmark-bar-track">
+                  <div class="bmark-bar-fill peer" data-width="65%"></div>
+                </div>
+                <span class="bmark-bar-val">65%</span>
+              </div>
+            </div>
+          </div>
+          <!-- Incident Response domain -->
+          <div class="bmark-row">
+            <div class="bmark-labels">
+              <span>Incident Response</span>
+              <span></span>
+            </div>
+            <div class="bmark-bars">
+              <div class="bmark-bar-wrap">
+                <span class="bmark-bar-lbl">You</span>
+                <div class="bmark-bar-track">
+                  <div class="bmark-bar-fill you" data-width="52%"></div>
+                </div>
+                <span class="bmark-bar-val">52%</span>
+              </div>
+              <div class="bmark-bar-wrap">
+                <span class="bmark-bar-lbl">Peers</span>
+                <div class="bmark-bar-track">
+                  <div class="bmark-bar-fill peer" data-width="60%"></div>
+                </div>
+                <span class="bmark-bar-val">60%</span>
+              </div>
+            </div>
+          </div>
+          <!-- Third-Party Risk domain -->
+          <div class="bmark-row">
+            <div class="bmark-labels">
+              <span>Third-Party Risk</span>
+              <span></span>
+            </div>
+            <div class="bmark-bars">
+              <div class="bmark-bar-wrap">
+                <span class="bmark-bar-lbl">You</span>
+                <div class="bmark-bar-track">
+                  <div class="bmark-bar-fill you" data-width="45%"></div>
+                </div>
+                <span class="bmark-bar-val">45%</span>
+              </div>
+              <div class="bmark-bar-wrap">
+                <span class="bmark-bar-lbl">Peers</span>
+                <div class="bmark-bar-track">
+                  <div class="bmark-bar-fill peer" data-width="49%"></div>
+                </div>
+                <span class="bmark-bar-val">49%</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="bm-legend">
-        <div class="bm-legend-item"><div class="bm-dot bm-dot-org"></div> Your organization</div>
-        <div class="bm-legend-item"><div class="bm-dot bm-dot-peer"></div> Peer average</div>
-        <div class="bm-legend-item" style="font-style: italic;">Sample data — replace with real benchmarks</div>
+
+      <div class="benchmark-content reveal">
+        <span class="label-tag">Benchmark Dashboard</span>
+        <h2 id="benchmark-heading">See how you compare — without exposing anything</h2>
+        <p>
+          GAPLIZZER's anonymized benchmark dashboard lets you compare your security posture
+          against industry peers — filtered by sector and organization size — without any raw
+          data ever leaving your environment or being attributable to you.
+        </p>
+        <ul class="onprem-list">
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Fully anonymized — only aggregated scores are shared
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Filter by industry vertical and organization size
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Identify which domains need the most investment relative to peers
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Board-ready reporting to justify security budget decisions
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║   GAMIFICATION                           ║
+     ╚══════════════════════════════════════════╝ -->
+<section id="gamification" class="section section-alt" aria-labelledby="gamification-heading">
+  <div class="container">
+    <div class="gamification-grid">
+      <div class="gamification-content reveal">
+        <span class="label-tag purple">Gamification Module</span>
+        <h2 id="gamification-heading">Turn real gaps into training missions</h2>
+        <p>
+          GAPLIZZER converts actual security gaps from your GAP analysis board into
+          hands-on training missions for interns and junior analysts — so you close
+          vulnerabilities while growing your team's capabilities.
+        </p>
+        <ul class="onprem-list" style="margin-bottom:1.5rem;">
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Missions derived from real gaps — not synthetic labs
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            XP and leaderboard to motivate junior team members
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Senior review gate before mission completion counts as remediation
+          </li>
+          <li>
+            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Track analyst skill growth alongside gap closure rates
+          </li>
+        </ul>
+        <button class="btn btn-ghost open-demo-modal" aria-haspopup="dialog">See it in action</button>
+      </div>
+
+      <div class="mission-list reveal">
+        <div class="mission-card">
+          <div class="mission-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="mission-info">
+            <div class="mission-title">Mission: Enforce MFA on admin accounts</div>
+            <div class="mission-meta">
+              <span class="mission-xp">+150 XP</span>
+              <span class="mission-level">· Level: Analyst I</span>
+              <span>· ISO A.9.4</span>
+            </div>
+          </div>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+          </div>
+          <div class="mission-info">
+            <div class="mission-title">Mission: Update incident response runbook</div>
+            <div class="mission-meta">
+              <span class="mission-xp">+200 XP</span>
+              <span class="mission-level">· Level: Analyst II</span>
+              <span>· NIST RS.CO</span>
+            </div>
+          </div>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <div class="mission-info">
+            <div class="mission-title">Mission: Conduct third-party vendor review</div>
+            <div class="mission-meta">
+              <span class="mission-xp">+300 XP</span>
+              <span class="mission-level">· Level: Senior Analyst</span>
+              <span>· SOC 2 CC9</span>
+            </div>
+          </div>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <div class="mission-info">
+            <div class="mission-title">Mission: Document data classification policy</div>
+            <div class="mission-meta">
+              <span class="mission-xp">+120 XP</span>
+              <span class="mission-level">· Level: Analyst I</span>
+              <span>· ISO A.8.2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- ╔══════════════════════════════════════════╗
      ║   TESTIMONIALS                           ║
      ╚══════════════════════════════════════════╝ -->
-<section id="testimonials" aria-labelledby="test-heading">
+<section id="testimonials" class="section" aria-labelledby="testimonials-heading">
   <div class="container">
     <div class="section-header reveal">
       <span class="label-tag">Testimonials</span>
-      <h2 id="test-heading">Trusted by compliance professionals</h2>
-      <p>Hear from compliance managers and security teams using GAPLIZZER.</p>
+      <h2 id="testimonials-heading">What security leaders are saying</h2>
+      <p>
+        <em>Note: The quotes below are illustrative placeholders. Replace with real testimonials before launch.</em>
+      </p>
     </div>
     <div class="testimonials-grid">
+
       <div class="testimonial-card reveal">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
         <p class="testimonial-quote">
-          "GAPLIZZER transformed how we approach our annual ISO 27001 review. What used to take weeks now surfaces actionable gaps in hours — and the on-prem deployment was a deal-breaker for us in a good way."
+          GAPLIZZER cut our annual GAP assessment from six weeks to three days.
+          The virtual CISO's prioritization is spot-on — we immediately knew
+          what to fix first.
         </p>
-        <!-- TODO: Replace with real customer testimonial -->
         <div class="testimonial-author">
-          <strong>Alex T.</strong>
-          <span>CISO · Financial Services</span>
+          <div class="author-avatar" aria-hidden="true">👤</div>
+          <div>
+            <div class="author-name">Jane D.</div>
+            <div class="author-title">CISO, Financial Services Firm</div>
+            <span class="author-placeholder">Placeholder</span>
+          </div>
         </div>
       </div>
+
       <div class="testimonial-card reveal">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
         <p class="testimonial-quote">
-          "The automated risk register alone saves us days every quarter. GAPLIZZER turned compliance from a reactive exercise into a continuous, proactive process our board actually understands."
+          The on-prem deployment was a non-negotiable for our regulated environment.
+          GAPLIZZER was the only platform that delivered AI-powered analysis
+          without requiring us to send data outside our perimeter.
         </p>
-        <!-- TODO: Replace with real customer testimonial -->
         <div class="testimonial-author">
-          <strong>Jordan M.</strong>
-          <span>Compliance Manager · Healthcare</span>
+          <div class="author-avatar" aria-hidden="true">👤</div>
+          <div>
+            <div class="author-name">Michael R.</div>
+            <div class="author-title">Head of Security, Healthcare Provider</div>
+            <span class="author-placeholder">Placeholder</span>
+          </div>
         </div>
       </div>
+
       <div class="testimonial-card reveal">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <div class="testimonial-stars" aria-label="4 stars">★★★★☆</div>
         <p class="testimonial-quote">
-          "The benchmark dashboard alone justifies the investment. For the first time, I can show the board exactly where we stand relative to peers — without exposing any proprietary data."
+          The gamification module was a pleasant surprise. Our junior analysts are
+          now actively closing gaps they used to ignore. Engagement has gone
+          up significantly since we rolled it out.
         </p>
-        <!-- TODO: Replace with real customer testimonial -->
         <div class="testimonial-author">
-          <strong>Sam R.</strong>
-          <span>VP Information Security · Technology</span>
+          <div class="author-avatar" aria-hidden="true">👤</div>
+          <div>
+            <div class="author-name">Priya S.</div>
+            <div class="author-title">Security Manager, Tech Scale-up</div>
+            <span class="author-placeholder">Placeholder</span>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ╔══════════════════════════════════════════╗
-     ║   INTEGRATIONS                           ║
-     ╚══════════════════════════════════════════╝ -->
-<section id="integrations" aria-labelledby="int-heading">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="label-tag">Integrations</span>
-      <h2 id="int-heading">Seamless Integrations</h2>
-      <p>GAPLIZZER connects with your existing tools to centralize evidence collection and keep your team aligned — without changing how they work.</p>
-    </div>
-    <div class="integrations-grid reveal">
-
-      <!-- Slack -->
-      <div class="integration-card">
-        <div class="int-icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M26.0 78.5a13 13 0 01-13 13 13 13 0 01-13-13 13 13 0 0113-13h13v13z" fill="#E01E5A"/>
-            <path d="M32.5 78.5a13 13 0 0113-13 13 13 0 0113 13v32.5a13 13 0 01-13 13 13 13 0 01-13-13V78.5z" fill="#E01E5A"/>
-            <path d="M45.5 26a13 13 0 01-13-13 13 13 0 0113-13 13 13 0 0113 13v13h-13z" fill="#36C5F0"/>
-            <path d="M45.5 32.5a13 13 0 0113 13 13 13 0 01-13 13H13a13 13 0 01-13-13 13 13 0 0113-13h32.5z" fill="#36C5F0"/>
-            <path d="M98 45.5a13 13 0 0113-13 13 13 0 0113 13 13 13 0 01-13 13H98v-13z" fill="#2EB67D"/>
-            <path d="M91.5 45.5a13 13 0 01-13 13 13 13 0 01-13-13V13a13 13 0 0113-13 13 13 0 0113 13v32.5z" fill="#2EB67D"/>
-            <path d="M78.5 98a13 13 0 0113 13 13 13 0 01-13 13 13 13 0 01-13-13V98h13z" fill="#ECB22E"/>
-            <path d="M78.5 91.5a13 13 0 01-13-13 13 13 0 0113-13H111a13 13 0 0113 13 13 13 0 01-13 13H78.5z" fill="#ECB22E"/>
-          </svg>
-        </div>
-        <span class="int-name">Slack</span>
-      </div>
-
-      <!-- Dropbox -->
-      <div class="integration-card">
-        <div class="int-icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 3L0 11.5 13 20 26 11.5 13 3z" fill="#0061FF"/>
-            <path d="M39 3L26 11.5 39 20 52 11.5 39 3z" fill="#0061FF"/>
-            <path d="M0 28.5L13 37l13-8.5-13-8.5L0 28.5z" fill="#0061FF"/>
-            <path d="M39 20l-13 8.5 13 8.5 13-8.5-13-8.5z" fill="#0061FF"/>
-            <path d="M13 39.5l13 8.5 13-8.5-13-8.5-13 8.5z" fill="#0061FF"/>
-          </svg>
-        </div>
-        <span class="int-name">Dropbox</span>
-      </div>
-
-      <!-- Jira -->
-      <div class="integration-card">
-        <div class="int-icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="jira-a" x1="98%" y1="0.1%" x2="58.9%" y2="40.7%">
-                <stop offset="18%" stop-color="#0052CC"/>
-                <stop offset="100%" stop-color="#2684FF"/>
-              </linearGradient>
-              <linearGradient id="jira-b" x1="2%" y1="99.9%" x2="41.1%" y2="59.3%">
-                <stop offset="18%" stop-color="#0052CC"/>
-                <stop offset="100%" stop-color="#2684FF"/>
-              </linearGradient>
-            </defs>
-            <path d="M76.6 255.8L256 76.4l179.4 179.4L256 435.2 76.6 255.8z" fill="#2684FF"/>
-            <path d="M256 166.1l-89.9 89.9 89.9 89.9V166.1z" fill="url(#jira-a)"/>
-            <path d="M166.1 255.8l89.9 89.9V255.8H166.1z" fill="url(#jira-b)"/>
-          </svg>
-        </div>
-        <span class="int-name">Jira</span>
-      </div>
-
-      <!-- Microsoft Teams -->
-      <div class="integration-card">
-        <div class="int-icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 2228.833 2073.333" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1554.637 777.5h575.713c54.391 0 98.483 44.092 98.483 98.483v524.398c0 199.901-162.051 361.952-361.952 361.952h-1.711c-199.901.028-361.975-162.001-361.975-361.902V828.971c0-28.427 23.045-51.471 51.442-51.471z" fill="#5059C9"/>
-            <circle cx="1943.75" cy="440.583" r="233.25" fill="#5059C9"/>
-            <circle cx="1218.083" cy="336.917" r="309.083" fill="#7B83EB"/>
-            <path d="M1667.323 777.5H717.01c-53.743 1.33-96.257 45.931-95.01 99.676v598.105c-7.505 322.519 247.657 590.16 570.167 598.053 322.51-7.893 577.672-275.534 570.167-598.053V877.176c1.247-53.745-41.267-98.346-95.01-99.676z" fill="#7B83EB"/>
-            <path opacity=".1" d="M1244 777.5v838.145c-.258 38.435-23.553 72.964-59.09 87.598a91.856 91.856 0 01-35.765 7.257H667.613c-6.738-17.105-12.958-34.21-18.142-51.833a631.44 631.44 0 01-27.472-184.957V877.05c-1.246-53.659 41.198-98.19 94.855-99.55H1244z" fill="#000"/>
-            <path opacity=".2" d="M1192.167 777.5v889.978a91.847 91.847 0 01-7.257 35.765c-14.634 35.537-49.163 58.832-87.598 59.09H691.975c-8.812-17.105-17.105-34.21-24.362-51.833-7.257-17.623-12.958-34.21-18.142-51.833a631.44 631.44 0 01-27.472-184.957V877.05c-1.246-53.659 41.198-98.19 94.855-99.55h475.313z" fill="#000"/>
-            <path opacity=".2" d="M1192.167 777.5v786.312c-.395 52.223-42.632 94.46-94.855 94.855H622c-27.472-53.833-42.413-113.61-43.447-174.473V877.05c-1.246-53.659 41.198-98.19 94.855-99.55h518.76z" fill="#000"/>
-            <path opacity=".2" d="M1140.333 777.5v786.312c-.395 52.223-42.632 94.46-94.855 94.855H622c-27.472-53.833-42.413-113.61-43.447-174.473V877.05c-1.246-53.659 41.198-98.19 94.855-99.55h466.925z" fill="#000"/>
-            <path d="M95.01 777.5h950.323c52.473 0 95.01 42.538 95.01 95.01v950.323c0 52.473-42.538 95.01-95.01 95.01H95.01C42.538 1917.843 0 1875.306 0 1822.833V872.51C0 820.038 42.538 777.5 95.01 777.5z" fill="#4B53BC"/>
-            <path d="M820.211 1060.406H630.268v517.844H509.579V1060.406H320.123V952.75h500.088v107.656z" fill="#fff"/>
-          </svg>
-        </div>
-        <span class="int-name">MS Teams</span>
-      </div>
-
-      <!-- SharePoint / OneDrive -->
-      <div class="integration-card">
-        <div class="int-icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="20" cy="16" r="12" fill="#0078D4"/>
-            <circle cx="30" cy="24" r="10" fill="#1490DF"/>
-            <path d="M6 36h36v4H6z" fill="#28A8E0"/>
-            <ellipse cx="24" cy="32" rx="18" ry="8" fill="#28A8E0" opacity=".7"/>
-          </svg>
-        </div>
-        <span class="int-name">OneDrive</span>
       </div>
 
     </div>
   </div>
 </section>
+
 
 <!-- ╔══════════════════════════════════════════╗
      ║   FAQ                                    ║
      ╚══════════════════════════════════════════╝ -->
-<section id="faq" aria-labelledby="faq-heading">
+<section id="faq" class="section section-alt" aria-labelledby="faq-heading">
   <div class="container">
     <div class="section-header reveal">
       <span class="label-tag">FAQ</span>
@@ -661,42 +890,53 @@
 
       <div class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          How long does it take to onboard?
-          <span class="faq-icon" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
-          </span>
+          What is a GAP analysis in cybersecurity?
+          <svg class="faq-chevron" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
         </button>
         <div class="faq-answer" aria-hidden="true">
           <div class="faq-answer-inner">
-            Most organizations complete initial onboarding within 2–5 days. The platform includes guided setup wizards, and our team provides white-glove onboarding for on-prem deployments.
+            A cybersecurity GAP analysis compares your current security controls against the requirements
+            of a target framework (e.g., ISO 27001, NIST CSF). It identifies where you fall short ("gaps"),
+            so you can prioritize remediation efforts and demonstrate compliance readiness.
           </div>
         </div>
       </div>
 
       <div class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          Does GAPLIZZER replace my existing compliance tools?
-          <span class="faq-icon" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
-          </span>
+          How does GAPLIZZER differ from traditional audit tools?
+          <svg class="faq-chevron" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
         </button>
         <div class="faq-answer" aria-hidden="true">
           <div class="faq-answer-inner">
-            No — GAPLIZZER is designed to complement your existing stack. It integrates with SIEMs, GRC tools, document repositories, and ticketing systems to create a unified compliance view.
+            Traditional tools produce static reports. GAPLIZZER provides a live, collaborative board
+            updated continuously by a multi-agent AI system. The virtual CISO orchestrates specialized
+            agents for each control domain, prioritizes findings by business risk, and tracks remediation
+            in real time — turning a one-time assessment into an ongoing security posture management cycle.
           </div>
         </div>
       </div>
 
       <div class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          What does "on-prem AI model" mean exactly?
-          <span class="faq-icon" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
-          </span>
+          Can GAPLIZZER be deployed fully on-premises?
+          <svg class="faq-chevron" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
         </button>
         <div class="faq-answer" aria-hidden="true">
           <div class="faq-answer-inner">
-            The entire AI inference stack — including the language models — runs within your datacenter or private cloud. No prompts, no data, and no inferences are sent to external APIs. You own the compute and the data.
+            Yes. GAPLIZZER supports full on-premises deployment, including the AI model. No data —
+            not even anonymized telemetry — leaves your environment unless you explicitly opt into
+            benchmark sharing. An air-gapped deployment option is available for classified and
+            highly regulated environments.
           </div>
         </div>
       </div>
@@ -704,41 +944,53 @@
       <div class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
           Which frameworks does GAPLIZZER support?
-          <span class="faq-icon" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
-          </span>
+          <svg class="faq-chevron" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
         </button>
         <div class="faq-answer" aria-hidden="true">
           <div class="faq-answer-inner">
-            Currently ISO 27001, NIST CSF, and SOC 2. Additional frameworks (CIS Controls, DORA, NIS2) are on the roadmap. Custom control mapping is also supported for organizations with proprietary frameworks.
+            GAPLIZZER natively supports ISO/IEC 27001:2022, NIST Cybersecurity Framework (v1.1 and 2.0),
+            and SOC 2. Multi-framework simultaneous mapping is supported — a single gap can be mapped
+            to controls across all three frameworks at once. Additional frameworks (CIS Controls, GDPR,
+            NIS2) are on the roadmap.
           </div>
         </div>
       </div>
 
       <div class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          How is the Benchmark Dashboard anonymized?
-          <span class="faq-icon" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
-          </span>
+          How does the anonymized benchmark work?
+          <svg class="faq-chevron" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
         </button>
         <div class="faq-answer" aria-hidden="true">
           <div class="faq-answer-inner">
-            Only aggregated, normalized scores are contributed to the benchmark pool — no raw data, findings, or identifiers are ever shared. Cohorts require a minimum of 10 participants before benchmarks are surfaced.
+            When you opt in, only aggregated domain-level scores (e.g., "Access Control: 78%") are
+            contributed to the benchmark pool — never gap descriptions, control names, or any
+            identifying information. You see your score vs. the anonymized aggregate of peers in
+            your industry and size bracket.
           </div>
         </div>
       </div>
 
       <div class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          Is GAPLIZZER suitable for small compliance teams?
-          <span class="faq-icon" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg>
-          </span>
+          Is GAPLIZZER suitable for small security teams?
+          <svg class="faq-chevron" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
         </button>
         <div class="faq-answer" aria-hidden="true">
           <div class="faq-answer-inner">
-            Absolutely. The virtual CISO acts as an AI force-multiplier, so even a team of one or two compliance analysts can maintain continuous visibility. Pricing scales with organization size.
+            Absolutely. The virtual CISO acts as an AI force-multiplier, so even a team of one or
+            two security analysts can maintain continuous GAP visibility and systematic remediation.
+            The gamification module also lets you leverage interns and junior staff productively.
+            Pricing scales with organization size.
           </div>
         </div>
       </div>
@@ -747,15 +999,19 @@
   </div>
 </section>
 
+
 <!-- ╔══════════════════════════════════════════╗
      ║   FINAL CTA                              ║
      ╚══════════════════════════════════════════╝ -->
-<section id="final-cta" aria-labelledby="cta-heading">
+<section id="final-cta" class="section" aria-labelledby="cta-heading">
   <div class="container">
     <div class="cta-box reveal">
       <span class="label-tag">Get Started</span>
-      <h2 id="cta-heading">Ready to simplify your ISO 27001 compliance?</h2>
-      <p>Book a personalized demo and see how GAPLIZZER maps to your environment in under 30 minutes.</p>
+      <h2 id="cta-heading">Ready to close your security gaps?</h2>
+      <p>
+        Book a personalized demo and see how GAPLIZZER maps your environment to
+        ISO 27001, NIST CSF, and SOC 2 — in under 30 minutes.
+      </p>
       <div class="cta-actions">
         <button class="btn btn-primary open-demo-modal" aria-haspopup="dialog">Request a Demo</button>
         <a href="assets/sample-report.pdf" class="btn btn-outline" target="_blank" rel="noopener">View Sample Report</a>
@@ -766,6 +1022,7 @@
 
 </main>
 
+
 <!-- ╔══════════════════════════════════════════╗
      ║   FOOTER                                 ║
      ╚══════════════════════════════════════════╝ -->
@@ -774,17 +1031,18 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="#hero" aria-label="GAPLIZZER home">
-          <img src="assets/logo.svg" alt="GAPLIZZER" width="140" height="32" class="footer-logo" />
+          <img src="assets/logo.svg" alt="GAPLIZZER" width="160" height="30" class="footer-logo" />
         </a>
-        <p>AI-powered ISO 27001 compliance automation — continuously, collaboratively, confidentially.</p>
+        <p>AI-powered cybersecurity GAP analysis — collaboratively, continuously, confidentially.</p>
       </div>
       <nav class="footer-col" aria-label="Product links">
         <h4>Product</h4>
         <a href="#features">Features</a>
-        <a href="#wizard">Implementation</a>
+        <a href="#how-it-works">How It Works</a>
         <a href="#frameworks">Frameworks</a>
         <a href="#confidentiality">On-Prem</a>
-        <a href="#integrations">Integrations</a>
+        <a href="#benchmark">Benchmark</a>
+        <a href="#gamification">Gamification</a>
       </nav>
       <nav class="footer-col" aria-label="Company links">
         <h4>Company</h4>
@@ -803,42 +1061,69 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; <span id="footer-year"></span> GAPLIZZER. All rights reserved.</span>
-      <span>Built for compliance managers, CISOs, and security teams.</span>
+      <span>Made for CISOs, analysts, and security teams.</span>
     </div>
   </div>
 </footer>
 
+
 <!-- ╔══════════════════════════════════════════╗
-     ║   DEMO REQUEST MODAL                     ║
+     ║   DEMO MODAL                             ║
      ╚══════════════════════════════════════════╝ -->
-<div class="modal-overlay" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
-  <div class="modal-box">
-    <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
-    <h2 id="modal-title">Request a Demo</h2>
-    <p>Fill in your details and we'll get back to you within one business day.</p>
-    <form id="demo-form" novalidate>
-      <div class="form-group">
-        <label for="field-name">Full name <span aria-hidden="true">*</span></label>
-        <input type="text" id="field-name" name="name" autocomplete="name" required placeholder="Jane Smith" />
+<div id="demo-modal" class="modal-overlay" role="dialog" aria-modal="true"
+     aria-labelledby="modal-title" aria-hidden="true">
+  <div class="modal">
+    <button id="modal-close" class="modal-close" aria-label="Close dialog">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6"  y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <div class="modal-header">
+      <h3 id="modal-title">Request a Demo</h3>
+      <p>Tell us about yourself and we'll be in touch within one business day.</p>
+    </div>
+
+    <form id="demo-form" class="modal-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="demo-name">Full name <span aria-hidden="true">*</span></label>
+          <input type="text" id="demo-name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="demo-company">Company <span aria-hidden="true">*</span></label>
+          <input type="text" id="demo-company" name="company" placeholder="Acme Corp" required autocomplete="organization" />
+        </div>
       </div>
       <div class="form-group">
-        <label for="field-email">Work email <span aria-hidden="true">*</span></label>
-        <input type="email" id="field-email" name="email" autocomplete="email" required placeholder="jane@company.com" />
+        <label for="demo-email">Work email <span aria-hidden="true">*</span></label>
+        <input type="email" id="demo-email" name="email" placeholder="jane@acme.com" required autocomplete="email" />
       </div>
       <div class="form-group">
-        <label for="field-company">Company <span aria-hidden="true">*</span></label>
-        <input type="text" id="field-company" name="company" autocomplete="organization" required placeholder="Acme Corp" />
+        <label for="demo-message">What are you hoping to solve?</label>
+        <textarea id="demo-message" name="message" rows="3"
+                  placeholder="Briefly describe your security posture challenge…"></textarea>
       </div>
-      <div class="form-group">
-        <label for="field-message">Message (optional)</label>
-        <textarea id="field-message" name="message" placeholder="Tell us about your environment, team size, or specific use case…"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary form-submit">Send Request</button>
+      <button type="submit" class="btn btn-primary">
+        <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+        Send Request
+      </button>
     </form>
+
+    <p class="modal-disclaimer">
+      No backend required — submission opens your default email client.
+      Your personal request data is never stored on any server.
+      (The optional benchmark feature shares only anonymized aggregate scores, never identifying data.)
+    </p>
   </div>
 </div>
 
-<script>
-  document.getElementById("footer-year").textContent = new Date().getFullYear();
-</script>
 <script src="assets/js/main.js"></script>
+</body>
+</html>
