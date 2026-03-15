@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 44" width="200" height="44" role="img" aria-label="GapRease logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 44" width="220" height="44" role="img" aria-label="GAPLIZZER logo">
   <!-- Shield mark -->
-  <polygon points="16,3 30,3 30,25 23,35 16,25" fill="#20c997" opacity="0.18"/>
-  <polygon points="16,3 30,3 30,25 23,35 16,25" fill="none" stroke="#20c997" stroke-width="2.2" stroke-linejoin="round"/>
-  <polyline points="19,17 22,21 28,13" fill="none" stroke="#20c997" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="16,3 30,3 30,25 23,35 16,25" fill="#a855f7" opacity="0.2"/>
+  <polygon points="16,3 30,3 30,25 23,35 16,25" fill="none" stroke="#a855f7" stroke-width="2.2" stroke-linejoin="round"/>
+  <polyline points="19,17 22,21 28,13" fill="none" stroke="#a855f7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- Wordmark -->
-  <text x="40" y="30" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21" font-weight="700" letter-spacing="-0.3" fill="#1b2e4b">Gap</text>
-  <text x="86" y="30" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21" font-weight="700" letter-spacing="-0.3" fill="#20c997">Rease</text>
+  <text x="40" y="30" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21" font-weight="700" letter-spacing="-0.3" fill="#ffffff">GAP</text>
+  <text x="91" y="30" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21" font-weight="700" letter-spacing="-0.3" fill="#a855f7">LIZZER</text>
 </svg>
