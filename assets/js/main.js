@@ -6,6 +6,14 @@
 
 const DEMO_EMAIL = "YOUR_EMAIL"; // ← replace with your real email address
 
+// Warn in development if DEMO_EMAIL is still a placeholder
+if (DEMO_EMAIL === "YOUR_EMAIL") {
+  console.warn(
+    "GAPLIZZER: DEMO_EMAIL is still set to the placeholder value. " +
+    "Update the DEMO_EMAIL constant in assets/js/main.js before deploying."
+  );
+}
+
 /* ── Smooth scrolling for anchor links ── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
