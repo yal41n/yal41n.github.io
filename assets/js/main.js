@@ -1,5 +1,5 @@
 /* =====================================================
-   CyberGAP – main.js
+   GapRease – main.js
    Smooth scroll · FAQ accordion · Demo modal · Reveal
    ===================================================== */
 
@@ -69,7 +69,7 @@ if (demoForm) {
     const company = demoForm.querySelector('[name="company"]').value.trim();
     const message = demoForm.querySelector('[name="message"]').value.trim();
 
-    const subject = encodeURIComponent("CyberGAP Demo Request – " + company);
+    const subject = encodeURIComponent("GapRease Demo Request – " + company);
     const body    = encodeURIComponent(
       "Name: " + name + "\n" +
       "Email: " + email + "\n" +
